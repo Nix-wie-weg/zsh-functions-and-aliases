@@ -46,7 +46,7 @@ alias bitbucket_repo_url='echo https://$(git remote -v | grep -oh "bitbucket.org
 
 Get an URL to a full diff for your branch (like `branch_diff` but on the web):
 ```bash
-alias bitbucket_review_url='echo $(bitbucket_repo)/branches/compare/$(branch_current)..$(branch_oldest_ancestor)'
+alias bitbucket_review_url='echo $(bitbucket_repo_url)/branches/compare/$(branch_current)..$(branch_oldest_ancestor)'
 ```
 
 Ticket system
@@ -62,7 +62,7 @@ Rubocop
 
 Check all changed files in your current branch with rubocop:
 ```bash
-alias branch_rubocop="git branch_files | grep '\.rb$' | xargs rubocop"
+alias branch_rubocop="branch_files | grep '\.rb$' | xargs rubocop"
 ```
 
 Shortcuts
