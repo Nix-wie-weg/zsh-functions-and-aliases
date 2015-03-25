@@ -41,7 +41,7 @@ Bitbucket
 
 Get an URL to your hosted repo:
 ```bash
-bitbucket_repo_url='echo https://$(git remote -v | grep -oh "bitbucket.org[:/][^ ]\+.git" | head -1 | sed "s/:/\//" | sed "s/\.git$//")'
+alias bitbucket_repo_url='echo https://$(git remote -v | grep -oh "bitbucket.org[:/][^ ]\+.git" | head -1 | sed "s/:/\//" | sed "s/\.git$//")'
 ```
 
 Get an URL to a full diff for your branch (like `branch_diff` but on the web):
