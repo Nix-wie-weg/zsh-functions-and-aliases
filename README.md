@@ -62,7 +62,7 @@ Rubocop
 
 Check all changed files in your current branch with rubocop:
 ```bash
-alias branch_rubocop="branch_files | grep '\.rb$' | xargs rubocop"
+alias branch_rubocop='branch_files | grep  "\.\(rb\|gemspec\)$" | xargs rubocop'
 ```
 
 Shortcuts
