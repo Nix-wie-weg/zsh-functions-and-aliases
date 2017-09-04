@@ -65,6 +65,15 @@ Check all changed files in your current branch with rubocop:
 alias branch_rubocop='branch_files | grep  "\.\(rb\|gemspec\)$" | xargs rubocop --force-exclusion'
 ```
 
+Foodcritic
+-------
+
+Check all changed files in your current branch with foodcritic:
+```bash
+alias branch_foodcritic="branch_files | grep '\.\(rb\|erb\)$' | xargs bundle exec foodcritic --role-path roles -r .foodcritic
+    ↪ "
+```
+
 Shortcuts
 ---------
 Feel free to bind personal aliases in whatever style you prefer (examples for prezto):
