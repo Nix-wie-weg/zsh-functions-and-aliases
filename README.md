@@ -68,7 +68,7 @@ alias branch_rubocop='branch_files | grep  "\.\(rb\|gemspec\)$" | xargs rubocop 
 Foodcritic
 -------
 
-Check all changed files in your current branch with rubocop:
+Check all changed files in your current branch with foodcritic:
 ```bash
 alias branch_foodcritic="branch_files | grep '\.\(rb\|erb\)$' | xargs bundle exec foodcritic --role-path roles -r .foodcritic
     ↪ "
